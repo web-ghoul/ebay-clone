@@ -1,0 +1,139 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #fff;
+  width: 100vw;
+  max-width: 100vw;
+  min-height: 100vh;
+  overflow-x: hidden;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.react-slideshow-wrapper,
+.images-wrap {
+  height: 100%;
+}
+
+.contain {
+  padding-left: 120px;
+  padding-right: 120px;
+}
+
+.contain-y {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.contain-md-y {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+h1 {
+  font-size: 32px;
+}
+
+h3 {
+  font-size: 22px;
+}
+
+h6 {
+  font-size: 16px;
+}
+
+.subtitle_1 {
+  font-size: 14px;
+}
+
+.button {
+  font-size: 16px;
+}
+
+.footer_list {
+  list-style: none;
+}
+
+.footer_list li {
+  font-size: 13px;
+  color: #787878;
+  transition: ease-in-out all 0.3s;
+  display: flex;
+  justify-content: stretch;
+  align-items: center;
+  gap: 5px;
+}
+
+.footer_list li:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.indicators {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0px 1000px rgb(243 244 246 / var(--tw-bg-opacity, 1))
+    inset;
+  box-shadow: 0 0 0px 1000px rgb(243 244 246 / var(--tw-bg-opacity, 1)) inset;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+@media (max-width: 1200px) {
+  .contain {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+  .contain-y {
+    padding-top: 35px;
+    padding-bottom: 35px;
+  }
+}
+
+@media (max-width: 992px) {
+  .contain {
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+  .contain-y {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .contain {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+  .contain-y {
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+}
+
+@media (max-width: 520px) {
+  .contain {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  .contain-y {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+}
